@@ -1,4 +1,5 @@
 -- Common Table Expression (CTE) to identify and tag duplicate records
+
 WITH DuplicateRecords AS (
     SELECT 
         JourneyID,  -- Select the unique identifier for each journey (and any other columns you want to include in the final result set)
@@ -20,12 +21,14 @@ WITH DuplicateRecords AS (
 )
 
 -- Select all records from the CTE where row_num > 1, which indicates duplicate entries
+    
 SELECT *
 FROM DuplicateRecords
 -- WHERE row_num > 1  -- Filters out the first occurrence (row_num = 1) and only shows the duplicates (row_num > 1)
 ORDER BY JourneyID
 
 -- Outer query selects the final cleaned and standardized data
+    
 SELECT 
     JourneyID,  -- Selects the unique identifier for each journey to ensure data traceability
     CustomerID,  -- Selects the unique identifier for each customer to link journeys to specific customers
