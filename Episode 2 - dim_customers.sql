@@ -1,4 +1,5 @@
 -- SQL statement to join dim_customers with dim_geography to enrich customer data with geographic information
+
 SELECT 
     c.CustomerID,  -- Selects the unique identifier for each customer
     c.CustomerName,  -- Selects the name of each customer
