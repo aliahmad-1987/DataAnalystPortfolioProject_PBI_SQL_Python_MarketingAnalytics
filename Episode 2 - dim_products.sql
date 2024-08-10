@@ -1,10 +1,3 @@
-SELECT
-*
-FROM dbo.products
-
---*******************************************************************************************************************
---*******************************************************************************************************************
-
 -- Query to categorize products based on their price
 SELECT 
     ProductID,  -- Selects the unique identifier for each product
