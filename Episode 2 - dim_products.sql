@@ -1,4 +1,5 @@
--- Query to categorize products based on their price
+-- SQL Query to categorize products based on their price
+
 SELECT 
     ProductID,  -- Selects the unique identifier for each product
     ProductName,  -- Selects the name of each product
