@@ -1,14 +1,3 @@
-SELECT
-*
-FROM dbo.customers
-
-SELECT
-*
-FROM dbo.geography
-
---*******************************************************************************************************************
---*******************************************************************************************************************
-
 -- SQL statement to join dim_customers with dim_geography to enrich customer data with geographic information
 SELECT 
     c.CustomerID,  -- Selects the unique identifier for each customer
